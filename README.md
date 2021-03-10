@@ -18,6 +18,7 @@ Curso: Introducción a la programación y computación 1
 
 # Indicaciones
 
+<div style="text-align: justify">
 El codigo implementa el uso de listas simplemente enlazadas con sus variante pila, cola y listas doblemente enlazadas. <br />
 Todo el codigo se encuentra comentado en su mayoria, si alguna parte no lo estuviera es por que seguramente se repite el mismo proceso en otra parte del proyecto o considere que es algo que no es tan resaltable o facil de entender
-
+</div>
