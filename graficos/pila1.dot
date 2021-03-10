@@ -1,0 +1,10 @@
+digraph grafico{
+node [style = "filled" shape = "box"]
+"<clases.nodo.Nodo object at 0x000001702EB27790>" [label = "3" fillcolor = "red"]
+"<clases.nodo.Nodo object at 0x000001702EB27790>" -> "<clases.nodo.Nodo object at 0x000001702EB27730>"
+"<clases.nodo.Nodo object at 0x000001702EB27730>" [label = "5" fillcolor = "gray"]
+"<clases.nodo.Nodo object at 0x000001702EB27730>" -> "<clases.nodo.Nodo object at 0x000001702EB277F0>"
+"<clases.nodo.Nodo object at 0x000001702EB277F0>" [label = "4" fillcolor = "gray"]
+"<clases.nodo.Nodo object at 0x000001702EB277F0>" -> "<clases.nodo.Nodo object at 0x000001702EB27F70>"
+"<clases.nodo.Nodo object at 0x000001702EB27F70>" [label = "3" fillcolor = "blue"]
+}

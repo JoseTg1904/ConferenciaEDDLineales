@@ -1,0 +1,4 @@
+digraph grafico{
+node [style = "filled" shape = "box"]
+"<clases.nodo.Nodo object at 0x000001702EB27F70>" [label = "3" fillcolor = "red"]
+}

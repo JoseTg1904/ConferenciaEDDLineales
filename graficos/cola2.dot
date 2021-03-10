@@ -1,0 +1,7 @@
+digraph grafico{
+node [style = "filled" shape = "box"]
+rankdir = "LR"
+"<clases.nodo.Nodo object at 0x000001702EC75070>" [label = "1" fillcolor = "blue"]
+"<clases.nodo.Nodo object at 0x000001702EC75070>" -> "<clases.nodo.Nodo object at 0x000001702EC75040>"
+"<clases.nodo.Nodo object at 0x000001702EC75040>" [label = "2" fillcolor = "red"]
+}

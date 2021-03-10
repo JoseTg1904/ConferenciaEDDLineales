@@ -1,0 +1,7 @@
+digraph grafico{
+node [style = "filled" shape = "box"]
+"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" [label = "6" fillcolor = "blue"]
+"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>"
+"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" [label = "9" fillcolor = "red"]
+"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>"
+}
