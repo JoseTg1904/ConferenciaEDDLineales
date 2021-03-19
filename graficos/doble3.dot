@@ -1,7 +1,10 @@
 digraph grafico{
 node [style = "filled" shape = "box"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" [label = "9" fillcolor = "red"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" [label = "6" fillcolor = "blue"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>"
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b190>" [label = "6" fillcolor = "red"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b190>" -> "<clases.nodoDoble.NodoDoble object at 0x7f5aebc780d0>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc780d0>" [label = "4" fillcolor = "gray"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc780d0>" -> "<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b220>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc780d0>" -> "<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b190>" [label = "siguiente"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b220>" [label = "3" fillcolor = "blue"]
+"<clases.nodoDoble.NodoDoble object at 0x7f5aebc9b220>" -> "<clases.nodoDoble.NodoDoble object at 0x7f5aebc780d0>" [label = "siguiente"]
 }

@@ -1,4 +1,8 @@
 digraph grafico{
 node [style = "filled" shape = "box"]
-"<clases.nodo.Nodo object at 0x000001702EB27F70>" [label = "3" fillcolor = "red"]
+"<clases.nodo.Nodo object at 0x7fb0f6a89be0>" [label = "5" fillcolor = "red"]
+"<clases.nodo.Nodo object at 0x7fb0f6a89be0>" -> "<clases.nodo.Nodo object at 0x7fb0f6a899a0>"
+"<clases.nodo.Nodo object at 0x7fb0f6a899a0>" [label = "4" fillcolor = "gray"]
+"<clases.nodo.Nodo object at 0x7fb0f6a899a0>" -> "<clases.nodo.Nodo object at 0x7fb0f6aadd90>"
+"<clases.nodo.Nodo object at 0x7fb0f6aadd90>" [label = "3" fillcolor = "blue"]
 }

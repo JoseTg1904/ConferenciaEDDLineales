@@ -17,18 +17,23 @@ class ListaDoble:
             self.inicio = self.fin = NodoDoble(None, None, valor)
         else:
             # Recorrer desde el inicio de la lista 
-            aux = self.inicio 
+            aux = self.inicio
 
             # Verificador de insercion del valor
             bandera = False
             
             while aux != None:
                 if valor > aux.getValor():
+                    bandera = True
+
                     # Suponiendo que el nodo se inserta enmedio de dos nodos
                     # existentes, el nuevo nodo al ser mayor su anterior 
                     # es el nodo actual y el siguiente es el que era el 
                     # siguiente del actual
                     nuevo = NodoDoble(aux, aux.getSiguiente(), valor)
+                    
+                    #almacenando el siguiente para modificarlo si fuera un nodo interno
+                    siguiente = aux.getSiguiente()
 
                     # El nodo actual ahora apunta hacia el nuevo nodo
                     aux.setSiguiente(nuevo)
@@ -42,15 +47,13 @@ class ListaDoble:
                         # tiene un nodo siguiente por lo tanto a ese 
                         # siguiente hay que cambiarle su anterior que
                         # ahora es el nuevo nodo
-                        aux.getSiguiente().setAnterior(nuevo)
-
-                    bandera = True
+                        siguiente.setAnterior(nuevo)
 
                     # Salirse del ciclo por que ya se realizo la insercion 
                     # del nuevo nodo
                     break
 
-                aux = aux.getSiguiente()
+                aux = aux.getAnterior()
 
             # Si la insercion no se diera quiere decir que el valor ingresado
             # es menor a todos los existentes por lo tanto va al final
@@ -102,15 +105,15 @@ class ListaDoble:
         dot = "digraph grafico{\nnode [style = \"filled\" shape = \"box\"]\n"
         
         if tipo == 1:
-            self.recorridoinicioFin()
+            self.recorridoInicioFin()
         else:
-            self.recorridofinInicio()
+            self.recorridoFinInicio()
         
         dot += "}"
 
         crearGrafico(dot, nombre)
 
-    def recorridoinicioFin(self):
+    def recorridoInicioFin(self):
         global dot
 
         if not self.estaVacia():
@@ -124,14 +127,14 @@ class ListaDoble:
                     dot += "\"" + str(aux) + "\" [label = \"" + str(aux.valor) + "\" fillcolor = \"gray\"]\n"
                 
                 if aux.getAnterior() != None:
-                    dot += "\"" + str(aux) + "\" -> \"" + str(aux.getAnterior()) + "\"\n"
+                    dot += "\"" + str(aux) + "\" -> \"" + str(aux.getAnterior()) + "\" [label = \"anterior\"]\n"
                 
                 if aux.getSiguiente() != None:
-                    dot += "\"" + str(aux) + "\" -> \"" + str(aux.getSiguiente()) + "\"\n" 
+                    dot += "\"" + str(aux) + "\" -> \"" + str(aux.getSiguiente()) + "\" [label = \"siguiente\"]\n" 
                 
                 aux = aux.getAnterior()
 
-    def recorridofinInicio(self):
+    def recorridoFinInicio(self):
         global dot
         
         if not self.estaVacia():

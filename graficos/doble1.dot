@@ -1,16 +1,16 @@
 digraph grafico{
 node [style = "filled" shape = "box"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" [label = "9" fillcolor = "red"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" [label = "6" fillcolor = "gray"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27790>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC75280>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27790>" [label = "4" fillcolor = "gray"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27790>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC75130>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EB27790>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27730>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75130>" [label = "3" fillcolor = "gray"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75130>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC752B0>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC75130>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EB27790>"
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC752B0>" [label = "5" fillcolor = "blue"]
-"<clases.nodoDoble.NodoDoble object at 0x000001702EC752B0>" -> "<clases.nodoDoble.NodoDoble object at 0x000001702EC75130>"
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c1c0>" [label = "9" fillcolor = "red"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c1c0>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c100>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c100>" [label = "6" fillcolor = "gray"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c100>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c250>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c100>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c1c0>" [label = "siguiente"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c250>" [label = "5" fillcolor = "gray"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c250>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a140d0>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c250>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c100>" [label = "siguiente"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a140d0>" [label = "4" fillcolor = "gray"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a140d0>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c190>" [label = "anterior"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a140d0>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c250>" [label = "siguiente"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c190>" [label = "3" fillcolor = "blue"]
+"<clases.nodoDoble.NodoDoble object at 0x7fb0f6a1c190>" -> "<clases.nodoDoble.NodoDoble object at 0x7fb0f6a140d0>" [label = "siguiente"]
 }

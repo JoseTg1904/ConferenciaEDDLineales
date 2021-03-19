@@ -6,10 +6,8 @@ def inicial():
     pila.push(3)
     pila.push(4)
     pila.push(5)
-    pila.push(3)
+    pila.push(2)
     pila.graficar("Pila", "pila1")
-    print(pila.pop())
-    print(pila.pop())
     print(pila.pop())
     pila.graficar("Pila", "pila2")
     
@@ -17,15 +15,14 @@ def inicial():
     cola = ListaSimple()
     cola.enqueue(3)
     cola.enqueue(5)
-    cola.enqueue(5)
+    cola.enqueue(6)
     cola.enqueue(2)
     cola.enqueue(1)
     cola.graficar("Cola", "cola1")
     print(cola.dequeue())
     print(cola.dequeue())
-    print(cola.dequeue())
     cola.graficar("Cola", "cola2")
-
+    
     # Lista
     doble = ListaDoble()
     doble.insertarOrdenado(4)
